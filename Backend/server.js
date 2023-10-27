@@ -84,7 +84,11 @@ const server = http.createServer((req, res) => {
       }
     });
 
-  };
+  }
+  else {
+    console.log("ok");
+    res.end("ok");
+  }
   
 }); 
 
