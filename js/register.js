@@ -19,7 +19,7 @@ formulaire.addEventListener("submit", async (e) => {
   }
   console.log(monObjet);
 
-  const sendData = await fetch("http://localhost:4000/auth/register", {
+  const sendData = await fetch(`http://localhost:${process.env.PORT || 4000}/auth/register`, {
     method: "POST",
     body: JSON.stringify(monObjet),
   })

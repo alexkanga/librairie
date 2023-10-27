@@ -11,7 +11,7 @@ login.addEventListener("submit", async (e) => {
   console.log(data);
 
   let messageErreur = document.querySelector(".erreur-login");
-  const envoiServer = await fetch("http://localhost:4000/auth/login", {
+  const envoiServer = await fetch(`http://localhost:${process.env.PORT || 4000}/auth/login`, {
     method: "POST",
     body: JSON.stringify(data),
   })
