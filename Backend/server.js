@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
     // on revoie les utilisateur apres les avoir transformés en chaine de caractère
   }
 
-  else if (req.url === "/signup" && req.method === "GET") {
+  else if (req.url === "/signup.html" && req.method === "GET") {
     fs.readFile("../signup.html", "utf-8", (err, data) => {
       if (!err) {
         res.setHeader("content-type", "text/html");
@@ -26,7 +26,7 @@ const server = http.createServer((req, res) => {
     });
     // on revoie les utilisateur apres les avoir transformés en chaine de caractère
   }
-  else if (req.url === "/signin" && req.method === "GET") {
+  else if (req.url === "/signin.html" && req.method === "GET") {
     fs.readFile("../signin.html", "utf-8", (err, data) => {
       if (!err) {
         res.setHeader("content-type", "text/html");
@@ -36,7 +36,7 @@ const server = http.createServer((req, res) => {
     // on revoie les utilisateur apres les avoir transformés en chaine de caractère
   }
 
-  else if (req.url === "/categories" && req.method === "GET") {
+  else if (req.url === "/categories.html" && req.method === "GET") {
     fs.readFile("../categories.html", "utf-8", (err, data) => {
       if (!err) {
         res.setHeader("content-type", "text/html");
@@ -46,7 +46,7 @@ const server = http.createServer((req, res) => {
     // on revoie les utilisateur apres les avoir transformés en chaine de caractère
   }
 
-  else if (req.url === "/contact" && req.method === "GET") {
+  else if (req.url === "/contact.html" && req.method === "GET") {
     fs.readFile("../contact.html", "utf-8", (err, data) => {
       if (!err) {
         res.setHeader("content-type", "text/html");
