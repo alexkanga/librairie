@@ -17,6 +17,45 @@ const server = http.createServer((req, res) => {
     // on revoie les utilisateur apres les avoir transformés en chaine de caractère
   }
 
+  else if (req.url === "/signup" && req.method === "GET") {
+    fs.readFile("../signup.html", "utf-8", (err, data) => {
+      if (!err) {
+        res.setHeader("content-type", "text/html");
+        res.end(data);
+      }
+    });
+    // on revoie les utilisateur apres les avoir transformés en chaine de caractère
+  }
+  else if (req.url === "/signin" && req.method === "GET") {
+    fs.readFile("../signin.html", "utf-8", (err, data) => {
+      if (!err) {
+        res.setHeader("content-type", "text/html");
+        res.end(data);
+      }
+    });
+    // on revoie les utilisateur apres les avoir transformés en chaine de caractère
+  }
+
+  else if (req.url === "/categories" && req.method === "GET") {
+    fs.readFile("../categories.html", "utf-8", (err, data) => {
+      if (!err) {
+        res.setHeader("content-type", "text/html");
+        res.end(data);
+      }
+    });
+    // on revoie les utilisateur apres les avoir transformés en chaine de caractère
+  }
+
+  else if (req.url === "/contact" && req.method === "GET") {
+    fs.readFile("../contact.html", "utf-8", (err, data) => {
+      if (!err) {
+        res.setHeader("content-type", "text/html");
+        res.end(data);
+      }
+    });
+    // on revoie les utilisateur apres les avoir transformés en chaine de caractère
+  }
+
   else if (req.url === "/auth/register" && req.method === "POST") {
     let body = "";
     req.on("data", (data) => {     
