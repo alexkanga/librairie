@@ -84,6 +84,62 @@ const server = http.createServer((req, res) => {
       }
     });
 
+  } else if (req.url.startsWith("/images") && req.method === "GET") {
+    let receive = req.url.split("/");
+    let dernierIndice = receive[receive.length - 1];
+    let extension =
+      dernierIndice.split(".")[dernierIndice.split(".").length - 1];
+    //let path = `./assets/${dernierIndice}`;
+    const path = "."+ req.url.replace("images", "images");
+    let isExist = fs.existsSync(path);
+    console.log(dernierIndice, extension, path, isExist);
+    console.log(receive);
+
+    if (isExist) {
+      let data = fs.readFileSync(path);
+      console.log(data);
+      res.end(data);
+    } else {
+      res.end(null);
+    }
+  }
+  else if (req.url.startsWith("/css") && req.method === "GET") {
+    let receive = req.url.split("/");
+    let dernierIndice = receive[receive.length - 1];
+    let extension =
+      dernierIndice.split(".")[dernierIndice.split(".").length - 1];
+    //let path = `./assets/${dernierIndice}`;
+    const path = "."+ req.url.replace("css", "css");
+    let isExist = fs.existsSync(path);
+    console.log(dernierIndice, extension, path, isExist);
+    console.log(receive);
+
+    if (isExist) {
+      let data = fs.readFileSync(path);
+      console.log(data);
+      res.end(data);
+    } else {
+      res.end(null);
+    }
+  }
+  else if (req.url.startsWith("/js") && req.method === "GET") {
+    let receive = req.url.split("/");
+    let dernierIndice = receive[receive.length - 1];
+    let extension =
+      dernierIndice.split(".")[dernierIndice.split(".").length - 1];
+    //let path = `./assets/${dernierIndice}`;
+    const path = "."+ req.url.replace("js", "js");
+    let isExist = fs.existsSync(path);
+    console.log(dernierIndice, extension, path, isExist);
+    console.log(receive);
+
+    if (isExist) {
+      let data = fs.readFileSync(path);
+      console.log(data);
+      res.end(data);
+    } else {
+      res.end(null);
+    }
   }
   else {
     console.log("ok");
