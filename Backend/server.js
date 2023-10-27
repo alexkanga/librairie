@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
 
   
-  if (req.url === "/" && req.method === "GET") {
+  if ( (req.url === "/" || req.url === "/index.html")  && req.method === "GET") {
     fs.readFile("../index.html", "utf-8", (err, data) => {
       if (!err) {
         res.setHeader("content-type", "text/html");
