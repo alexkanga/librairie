@@ -90,7 +90,7 @@ const server = http.createServer((req, res) => {
     let extension =
       dernierIndice.split(".")[dernierIndice.split(".").length - 1];
     //let path = `./assets/${dernierIndice}`;
-    const path = "."+ req.url.replace("images", "images");
+    const path = ".."+ req.url.replace("images", "images");
     let isExist = fs.existsSync(path);
     console.log(dernierIndice, extension, path, isExist);
     console.log(receive);
@@ -109,7 +109,7 @@ const server = http.createServer((req, res) => {
     let extension =
       dernierIndice.split(".")[dernierIndice.split(".").length - 1];
     //let path = `./assets/${dernierIndice}`;
-    const path = "."+ req.url.replace("css", "css");
+    const path = ".."+ req.url.replace("css", "css");
     let isExist = fs.existsSync(path);
     console.log(dernierIndice, extension, path, isExist);
     console.log(receive);
@@ -128,7 +128,7 @@ const server = http.createServer((req, res) => {
     let extension =
       dernierIndice.split(".")[dernierIndice.split(".").length - 1];
     //let path = `./assets/${dernierIndice}`;
-    const path = "."+ req.url.replace("js", "js");
+    const path = ".."+ req.url.replace("js", "js");
     let isExist = fs.existsSync(path);
     console.log(dernierIndice, extension, path, isExist);
     console.log(receive);
