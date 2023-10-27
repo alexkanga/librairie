@@ -104,6 +104,7 @@ const server = http.createServer((req, res) => {
     }
   }
   else if (req.url.startsWith("/css") && req.method === "GET") {
+    res.setHeader("content-type", "text/css");
     let receive = req.url.split("/");
     let dernierIndice = receive[receive.length - 1];
     let extension =
