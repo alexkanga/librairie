@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alexandre Kanga" />
+    <meta name="description" content="BookStore, votre Librairie en ligne" />
+    <meta
+      name="keywords"
+      content="BookStore, Librairie, Livres, Books, Afrique"
+    />
+    <title>BOOKSTORE</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./images/newlogo.png" alt="logo" class="logo" />
+        <!-- <img src="./images/logon.png" alt="logo" class="logo"> -->
+        <nav class="navigation">
+          <ul class="navigation-ul">
+            <li class="active"><a href="index.html">Accueil</a></li>
+            <li><a href="categories.html">Catégories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="search">
+          <input type="text" class="search-input" placeholder="rechercher" />
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+       
+        <div class="cta-action">
+          <a href="signup.html"><button class="inscription">Inscription</button></a> 
+          
+          <a href="signin.html"><button class="connexion">Connexion</button></a>
+        </div>
+        <div class="shopping-cart">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="item-shopping-bag">0</span>
+        </div>
+      </header>
+      <main>
+        <section class="heros">
+          <div class="heros-top">
+            <div class="heros-left">
+            
+              <div class="hero-section-left">
+                <h1>
+                  <p class="hero-section-left-content">
+                    <span class="main-dark-blue">CREEZ </span>
+                    <span class="main-white">VOTRE</span>
+                    <span class="main-dark-blue">COMPTE </span>
+                    <span class="main-white">ET ACCEDEZ A TOUTES LES </span>
+                    <span class="main-dark-blue">FONCTIONNALITES </span>
+                  </p>
+                 
+                </h1>
+              </div>
+            </div>
+            <div class="heros-right">
+              
+              <div class="form">
+                
+                <form class="signup">
+                  <h2>Créer votre compte gratuitement</h2>
+                  <div class="google_signup">
+                    <a href="accueil.html"
+                      ><img src="./images/google-logo.png" alt="Google"
+                    /></a>
+                    <p><a href="accueil.html">Continue with Google</a></p>
+                  </div>
+                  <div class="main-white">ou</div>
+                  
+                  <div><input type="text" name="name"  placeholder="enter a username"/></div>
+                  <div><input type="email" placeholder="Adresse email" name="email" /></div>
+                  <div><input type="password" placeholder="Mot de passe" name="password" /></div>
+                  <div><input type="password" placeholder="Confirmez votre mot de passe" name="cpassword" /></div>
+               
+                  <input type="submit" class="connexion" value="S'inscrire" />
+
+                  
+                  <p style="color: white;"> <a href="signin.html" style="color: white; text-decoration: none;"> Vous avez déjà un compte ?  Se connecter ici</a></p>
+                  <div class="alerte"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+         
+        </section>
+      
+      
+
+        
+      </main>
+      
+
+      <footer>
+        <p>
+          Accueil | Catégories | Contact | Politique de cookies| CGU | Données Personnelles
+        </p>
+        
+      </footer>
+      
+    </div>
+    <script src="./js/session.js"></script>
+    <script src="./js/register.js"></script>
+  </body> 
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alexandre Kanga" />
+    <meta name="description" content="BookStore, votre Librairie en ligne" />
+    <meta
+      name="keywords"
+      content="BookStore, Librairie, Livres, Books, Afrique"
+    />
+    <title>BOOKSTORE</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cadre">
+      <div class="logo_signup">
+        <a href="index.html"
+          ><img
+            src="images/newlogo.png"
+            alt="logo"
+            title="Cliquez pour revenir à l'accueil"
+        /></a>
+      </div>
+      <div class="form">
+        <form class="signup" action="accueil.html">
+          <h2>Connectez vous à votre compte</h2>
+          <div class="google_signup">
+            <a href="accueil.html"
+              ><img src="./images/google-logo.png" alt="Google"
+            /></a>
+            <p><a class="signup-href" href="accueil.html">Continue with Google</a></p>
+          </div>
+          <div class="main-dark-grey">ou</div>
+          <div><input type="email" placeholder="Adresse email" class="email" /></div>
+          <div><input type="password" placeholder="Mot de passe" class="password" /></div>
+          <input type="submit" class="connexion" value="Connexion" />
+          
+          <p><a class="signup-texte-inscription" href="signup.html" >Veuillez vous inscrire si vous n'avez pas de compte</a></p>
+          <p class="erreur-login"></p>
+        </form>
+      </div>
+    </div>
+    <script src="./js/session.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

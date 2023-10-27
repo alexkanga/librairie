@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alexandre Kanga" />
+    <meta name="description" content="BookStore, votre Librairie en ligne" />
+    <meta
+      name="keywords"
+      content="BookStore, Librairie, Livres, Books, Afrique"
+    />
+    <title>BOOKSTORE</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./images/newlogo.png" alt="logo" class="logo" />
+        <!-- <img src="./images/logon.png" alt="logo" class="logo"> -->
+        <nav class="navigation">
+          <ul class="navigation-ul">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Catégories</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="search">
+          <input type="text" class="search-input" placeholder="rechercher" />
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+       
+        <div class="cta-action">
+          <a href="signup.html"><button class="inscription">Inscription</button></a> 
+          
+          <a href="signin.html"><button class="connexion">Connexion</button></a>
+        </div>
+        <div class="shopping-cart">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="item-shopping-bag">0</span>
+        </div>
+      </header>
+      <main>
+        <div class="separator"></div>
+        <div class="feature-image">
+          <img src="./images/fetaure-image.png" alt="feature-image">
+        </div>
+        <div class="separator"></div>
+        <div class="produits">
+          <div class="produits-left">
+            
+            <div class="categories-container">
+              <h5>CATEGORIES</h5>
+              
+              <ul class="categories">
+                <li><span>Articles religieux</span> <i class="fas fa-angle-down"></i></li>
+                <li><span>Informatique</span> <i class="fas fa-angle-down"></i></li>
+                <li><span>Jeunesse</span><i class="fas fa-angle-down"></i></li>
+                <li><span>Scolaire</span><i class="fas fa-angle-down"></i></li>
+                <li><span>Universitaire</span><i class="fas fa-angle-down"></i></li>
+                <li><span>Développement personnel</span><i class="fas fa-angle-down"></i></li>
+                <li><span>Dictionnaires</span><i class="fas fa-angle-down"></i></li>
+                <li><span>Rentrée Scolaire 2023 - 2024</span><i class="fas fa-angle-down"></i></li>
+              </ul>
+            </div>
+            <div class="separator"></div>
+            <div class="filtrer-container">
+              <h5>FILTRER PAR</h5>
+              <h6>DISPONIBILITE</h6>
+              <p><input type="checkbox" name="available" id="available"> <span>En stock (16509)</span> </p>
+              <p><input type="checkbox" name="unavailable" id="unavailable"><span>Non disponible (13748)</span></p>
+              
+              <h6>PRIX</h6>
+              <img src="./images/price-slider.png" alt="price-slider">
+            </div>
+          </div>
+          <div class="produits-right">
+            
+            <div class="produits-search">
+              <div class="products-found"><span class="products-found-span">17622 Produits trouvés</span></div>
+              <div class="produits-search-by">
+                <p class="trier">Trier par :</p>
+                <p><select name="filter" id="filter" class="filter">
+                  <option value="none"></option>
+                  <option value="nom_croissant">Nom, A à Z</option>
+                  <option value="nom_decroissant">Nom, Z à A</option>
+                  <option value="prix_croissant">Prix, croissant</option>
+                  <option value="prix_decroissant">Prix, décroissant</option>
+                </select></p>
+              </div>
+              
+            </div>
+
+            <!-- BLOC des produis -->
+
+            <article class="articles">
+              <article class="article">
+                <article class="article-left">
+                  <img src="./images/livre3.png" alt="livre3">
+                </article>
+                <article class="article-right">
+                  <p >Vaïana - L'histoire du film - Album - Dès 2 ans</p>
+                  <p>2 600 FCFA</p>
+                  <p><i class="fa fa-shopping-cart"></i></p>
+                </article>
+              </article>
+              <article class="article">
+                <article class="article-left">
+                  <img src="./images/livre3.png" alt="livre3">
+                </article>
+                <article class="article-right">
+                  <p >Vaïana - L'histoire du film - Album - Dès 2 ans</p>
+                  <p>2 600 FCFA</p>
+                  <p><i class="fa fa-shopping-cart"></i></p>
+                </article>
+              </article>
+              <article class="article">
+                <article class="article-left">
+                  <img src="./images/livre3.png" alt="livre3">
+                </article>
+                <article class="article-right">
+                  <p >Vaïana - L'histoire du film - Album - Dès 2 ans</p>
+                  <p>2 600 FCFA</p>
+                  <p><i class="fa fa-shopping-cart"></i></p>
+                </article>
+              </article>
+              <article class="article">
+                <article class="article-left">
+                  <img src="./images/livre3.png" alt="livre3">
+                </article>
+                <article class="article-right">
+                  <p >Vaïana - L'histoire du film - Album - Dès 2 ans</p>
+                  <p>2 600 FCFA</p>
+                  <p><i class="fa fa-shopping-cart"></i></p>
+                </article>
+              </article>
+              <article class="article">
+                <article class="article-left">
+                  <img src="./images/livre3.png" alt="livre3">
+                </article>
+                <article class="article-right">
+                  <p >Vaïana - L'histoire du film - Album - Dès 2 ans</p>
+                  <p>2 600 FCFA</p>
+                  <p><i class="fa fa-shopping-cart"></i></p>
+                </article>
+              </article>
+              <article class="article">
+                <article class="article-left">
+                  <img src="./images/livre3.png" alt="livre3">
+                </article>
+                <article class="article-right">
+                  <p >Vaïana - L'histoire du film - Album - Dès 2 ans</p>
+                  <p>2 600 FCFA</p>
+                  <p><i class="fa fa-shopping-cart"></i></p>
+                </article>
+              </article>
+              <div class="pagination"><img src="./images/pagination.png" alt="pagination"></div>
+            </article>
+            
+
+            <!-- End Bloc des produits -->
+          </div>
+            
+        </div>
+        <!-- image before footer -->
+        <div class="separator"></div>
+        <div class="feature-image">
+          <img src="./images/fetaure-image.png" alt="feature-image">
+        </div>
+        
+      </main>
+      
+      
+      <footer>
+        <p>
+          Accueil | Catégories | Contact | Politique de cookies| CGU | Données Personnelles
+        </p>
+        
+      </footer>
+      
+    </div>
+  </body>
+</html>
